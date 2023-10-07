@@ -21,8 +21,8 @@ const outsideTemp = null;
 // console.log(typeof outsideTemp); // null/object
 
 let userEmail;
-console.log(userEmail); // Undefined
-console.log(typeof userEmail); // Undefined
+// console.log(userEmail); // Undefined
+// console.log(typeof userEmail); // Undefined
 
 const id = Symbol("123");
 const anotherId = Symbol("123");
@@ -31,13 +31,16 @@ const anotherId = Symbol("123");
 // console.log(id === anotherId); // false
 
 const bigNumber = 3456543576654356754n; // bigInt
-console.log(typeof bigNumber);
+// console.log(typeof bigNumber);
 
 const heroes = ["shaktiman", "naagraj", "doga"];
 let myObj = {
+  //key: value pair
   name: "suraj",
   age: 30,
 };
+
+// console.log(typeof myObj);
 
 const myFunction = function () {
   // console.log("Hello World");
