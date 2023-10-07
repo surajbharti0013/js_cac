@@ -72,3 +72,26 @@ userTwo.email = "suraj@google.com";
 
 // console.log(1111111111111111111);
 // console.log(BigInt(1111111111111111111));
+
+let userNumber = 10;
+let userName = "Hello";
+let userLogged = true;
+let userAreaTemp = null;
+let userDefined;
+
+console.log(typeof userNumber);
+console.log(typeof userName);
+console.log(typeof userLogged);
+console.log(typeof userAreaTemp);
+console.log(typeof userDefined);
+console.log(typeof myObj);
+console.log(typeof myFunction);
+
+/*Note:- 
+typeof number is number;
+typeof text is string;
+typeof true/false is boolean;
+typeof null is object;
+typeof undefined is undefined;
+typeof object is object;
+typeof function is function;*/
