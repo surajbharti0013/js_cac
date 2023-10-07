@@ -46,7 +46,7 @@ const myFunction = function () {
   // console.log("Hello World");
 };
 
-// ++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Stack (Primitive), Heap (Non-Primitive)
 
@@ -56,8 +56,8 @@ let anotherName = myName;
 
 anotherName = "suraj";
 
-console.log(myName);
-console.log(anotherName);
+// console.log(myName);
+// console.log(anotherName);
 
 let userOne = {
   email: "user@google.com",
@@ -67,8 +67,8 @@ let userOne = {
 let userTwo = userOne;
 userTwo.email = "suraj@google.com";
 
-// console.log(userOne.email);
-// console.log(userTwo.email);
+console.log(userOne.email);
+console.log(userTwo.email);
 
 // console.log(1111111111111111111);
 // console.log(BigInt(1111111111111111111));
@@ -79,13 +79,13 @@ let userLogged = true;
 let userAreaTemp = null;
 let userDefined;
 
-console.log(typeof userNumber);
-console.log(typeof userName);
-console.log(typeof userLogged);
-console.log(typeof userAreaTemp);
-console.log(typeof userDefined);
-console.log(typeof myObj);
-console.log(typeof myFunction);
+// console.log(typeof userNumber);
+// console.log(typeof userName);
+// console.log(typeof userLogged);
+// console.log(typeof userAreaTemp);
+// console.log(typeof userDefined);
+// console.log(typeof myObj);
+// console.log(typeof myFunction);
 
 /*Note:- 
 typeof number is number;
