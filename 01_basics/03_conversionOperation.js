@@ -54,20 +54,20 @@ let str3 = str1 + str2;
 
 // Note :- If starting value is string then all values are treated as string and if starting value is number and then 3rd value is string then 1st value is calculated and then after string all value are printed as string.
 
-// console.log("1" + 2); // One value was string so o/p was 12
-// console.log(1 + "2"); // One value was string so o/p was 12
-// console.log(1 + 2 + "2"); // Here js added first and second value and printed third value as it is.
-// console.log(1 + "2" + 2); // Here js printed first, second and third value as it is.
-// console.log("1" + 2 + 2); // Here js printed first, second and third value as it is.
-// console.log( 3 + 4 * 5 % 3); // code is write but its recommended not to write complex calculation. 
+console.log("1" + 2); // One value was string so o/p was 12
+console.log(1 + "2"); // One value was string so o/p was 12
+console.log(1 + 2 + "2"); // Here js added first and second value and printed third value as it is.
+console.log(1 + "2" + 2); // Here js printed first, second and third value as it is.
+console.log("1" + 2 + 2); // Here js printed first, second and third value as it is.
+console.log(3 + 4 * 5 % 3); // code is write but its recommended not to write complex calculation. 
 
 // console.log(+true); // Output is 1
-//console.log(true+); // Statement is incorrect
-//console.log(""+); // Output is 0
+// console.log(true+); // Statement is incorrect
+// console.log(""+); // Output is 0
 
 let num1, num2, num3;
 num1 = num2 = num3 = 2+2;
-// console.table([num1, num2, num3]); // code is write but its recommended not to write complex calculation. 
+// console.table([num1, num2, num3]); // code is right but its recommended not to write complex calculation. 
 
 //Prefix vs PostFix increment means in prefix value gets incremented then printed and in PostFix value get printed then incremented.
 let gameCounter = 100;
