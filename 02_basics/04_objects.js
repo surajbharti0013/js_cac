@@ -55,3 +55,17 @@ const regularUser = {
   // console.log(Object.values(tinderUser)); // to get all values of object tinderUser.
   
   // console.log(tinderUser.hasOwnProperty("isLoggedIn")); // to check given key is there is defined object and the value comes in boolean format
+
+//****************************Object part 3************************************ */
+
+// Destructuring objects
+const course = {
+  coursename: "js in hindi",
+  price: "999",
+  courseInstructor: "suraj"
+}
+// console.log(course.courseInstructor);
+
+const {courseInstructor: instructor} = course // when ever you want to call courseInstructor you just need to write instructor.
+// console.log(instructor);
+// console.log(course.courseInstructor);
