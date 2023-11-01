@@ -1,4 +1,4 @@
-// while
+// while loop
 
 // let i = 0;
 // while (i<=5) {
@@ -13,7 +13,7 @@
 //   i++;
 // }
 
-//  do-while
+// do-while loop
 // This loop 1st print the statement then check the condition. Hence, when program doesnt match condition then also it runs atleast one time.
 
 // let score = 6;
