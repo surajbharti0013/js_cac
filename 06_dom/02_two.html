@@ -9,10 +9,10 @@
 
 <body style="background-color: #212121; color: #fff">
   <div class="parent">
-    <div class="day">Monday</div>
-    <div class="day">Tuesday</div>
-    <div class="day">Wednessday</div>
-    <div class="day">Thursday</div>
+    <div class="day monday">Monday</div>
+    <div class="day tuesday">Tuesday <span style="display: none;">test text</span></div>
+    <div class="day wednessday">Wednessday</div>
+    <div class="day thursday">Thursday</div>
   </div>
 </body>
 
@@ -27,14 +27,15 @@
   //   console.log(parent.children[i].innerHTML);
   // }
 
-  parent.children[1].style.color = "orange";
-  // console.log(parent.firstElementChild);
-  // console.log(parent.lastElementChild); // to travel from parent to child.
+  // parent.children[1].style.color = "orange";
+  // console.log(parent.firstElementChild); // To know 1st child in parent.
+  // console.log(parent.lastElementChild); // to travel from parent to child. To know the last child in parent.
 
   const dayOne = document.querySelector('.day')
-  console.log(dayOne);
-  console.log(dayOne.parentElement); // to travel from child to parent.
-  console.log(dayOne.nextElementSibling); // to travel from child to its sibling selector.
+  const dayMonday = document.querySelector('.monday')
+  // console.log(dayOne);
+  // console.log(dayOne.parentElement); // to travel from child to parent.
+  // console.log(dayMonday.nextElementSibling); // to travel from child to its sibling selector.
 
   console.log("NODES: ", parent.childNodes); // calculates how many nodes are there in parent node each enter is also calculated as 1 node(text) 
 
