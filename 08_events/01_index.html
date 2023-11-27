@@ -57,18 +57,18 @@
   // False - Event Bubbling goes from bottom to top
   // True- Event Capturing Mode goes from top to bottom
 
-  // document.getElementById('images').addEventListener('click', function (e) {
-  //   console.log("Main div clicked inside the ul");
-  // }, false)
+  document.getElementById('images').addEventListener('click', function (e) {
+    console.log("Main div clicked inside the ul");
+  }, false)
 
-  // document.getElementById('owl').addEventListener('click', function(e){
-  //     console.log("Inner div owl clicked");
-  //     // e.stopPropagation() //:- To stop bubbling or capturing mode.
-  // }, false)
+  document.getElementById('owl').addEventListener('click', function(e){
+      console.log("Inner div owl clicked");
+      // e.stopPropagation() //:- To stop bubbling or capturing mode.  
+  }, false)
 
   // document.getElementById('google').addEventListener('click',function(e){
-  //     e.preventDefault(); // Stops its current step and goes to next step
-  //     e.stopPropagation()
+  //     e.preventDefault(); // Stops the default behaviour of selected element.
+  //     e.stopPropagation() //:- To stop bubbling or capturing mode.
   //     console.log("google clicked");
   // }, false)
 
@@ -77,11 +77,12 @@
     if (e.target.tagName === 'IMG') {
       console.log(e.target.id);
       let removeIt = e.target.parentNode
-      removeIt.remove()
+      // removeIt.parentNode.removeChild(removeIt)
+      // removeIt.remove()
     }
   })
 
-  //removeIt.parentNode.removeChild(removeIt)
+  //  removeIt.parentNode.removeChild(removeIt)
 </script>
 
 </html>
