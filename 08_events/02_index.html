@@ -12,29 +12,39 @@
   <button id="stop">Stop</button>
 </body>
 <script>
-  /*Set Timeout To do work one time after given time
-  setTimeout(function(){
-    console.log("setTimeout");
+  /*Set Timeout To do work once after given time*/
+  /*setTimeout(function(){
+    console.log("surajTimeout");
   },2000);*/
 
-  /*set Interval To repeat work after given time
-  const sayName = function(){
-    console.log("setInterval1");
+  /*const sayNameTimeout = function(){
+    console.log("surajTimeout");
+  }
+  setTimeout(sayNameTimeout, 2000);*/
+
+  /*set Interval To repeat work after given time*/
+
+  /*setInterval(function(){
+    console.log("surajInterval");
+  },2000);*/
+
+  /*const sayName = function(){
+    console.log("surajInterval");
   }
   setInterval(sayName, 2000);*/
 
-  /*Change of h1(Chai aur code to best JS series) after certain time*/
+  /*Change h1(Chai aur code to best JS series) after certain time*/
   const changeText = function(){
     document.querySelector('h1').innerHTML = "best JS series"
   }
-  const changeMe = setTimeout(changeText, 2000); 
+  const changeMe = setTimeout(changeText, 2000);
   
-  /*Stop event to happen by using clearTimeout*/
+  /*Stop event when user click on button by using clearTimeout*/
   document.querySelector('#stop').addEventListener('click', function(){
     clearTimeout(changeMe)
-    console.log(button);
+    console.log('STOPPED');
   })
-  console.log('STOPPED');
+  
 </script>
 
 </html>
