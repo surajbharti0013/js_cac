@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./ApiRequest.css"> -->
+    <style>.herobox{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .box1 {
+        height: 200px;
+        width: 200px;
+        background-color: antiquewhite;
+        color: black;
+        border-radius: 15px 15px 0 0;
+      }
+      
+      .box2 {
+        height: 35px;
+        width: 200px;
+        background-color: rgb(88, 254, 37);
+        color: black;
+        border-radius: 0 0 15px 15px;
+      }</style>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    <!-- 0	UNSENT	Client has been created. open() not called yet.
+    1	OPENED	open() has been called.
+    2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+    3	LOADING	Downloading; responseText holds partial data.
+    4	DONE	The operation is complete. -->
+    <card>
+        <div class="herobox">
+            <div class="main">
+                <div class="box1" id="mybox1">
+                </div>
+                <div class="box2" id="mybox2">
+                </div>
+            </div>
+        </div>
+        
+
+    </card>
+    <script>
+        const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+        // https://api.github.com/users/bhartisuraj
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', requestUrl)
+        xhr.onreadystatechange = function(){
+            console.log(xhr.readyState);
+            if (xhr.readyState === 4) {
+                const data = JSON.parse(this.responseText)
+                document.querySelector('.box2').innerHTML = "your followers are: " + (JSON.parse(this.
+                responseText)).followers;
+
+                // const bannerImage = (JSON.parse(this.responseText)).avatar_url;
+                // console.log(bannerImage);
+                
+                // document.querySelector('.box1') = img.src(`${bannerImage}`);
+
+            }
+        }
+        xhr.send();
+
+//         const img = document.createElement("img");
+// img.src = newImg;
+// document.querySelector('.box1').appendChild(img);
+    </script>
+</body>
+
+</html>
